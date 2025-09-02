@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>i</title>
+        <style>
+            body {
+                padding: 1% 10% 1% 10%;
+                max-width: 80ch;
+                font-family: sans-serif;
+            }
+            h1 {
+                margin-bottom: 0;
+                color: #456;
+            }
+            hr {
+                margin-bottom: 0;
+            }
+            h2 {
+                margin-top: 2em;
+                margin-bottom: 0;
+                color: #456;
+            }
+            .header {
+                display: flex;
+                flex-flow: row wrap;
+                align-items: baseline;
+                justify-content: space-between;
+            }
+            .tagline {
+                font-size: small;
+            }
+        </style>
+    </head>
+    <body>
+
+        <span class="header">
+            <h1>i</h1>
+            <span>
+                <a href="https://github.com/agoodtraveler/i" target="_blank">github</a>
+            </span>
+        </span>
+        <hr>
+        <span class="tagline">portable, distributed runtime and programing environment for personal computing.</span>
+
+
+
+        <h2>10 PRINT "Hello World!"</h2>
+            <p>
+                When personal computers first appeared, typing those simple lines into an interpreter unlocked a superpower - direct control over your machine. Today, we carry supercomputers in our pockets, wear them on our wrists, and spend most of our lives interacting with these devices. Yet that sense of programming empowerment has vanished. Instead of true personal computers, we have "rented" portals that corporations allow us to use in limited ways, accessing platforms that know more about us than we know about ourselves.
+            </p>
+            <p>
+                i brings back that magic for the modern age. It seamlessly connects all your personal devices - phones, laptops, tablets, microcontrollers, sensors - into a single, ephemeral, programmable computer. Write a few lines of JavaScript, and suddenly your phone's camera can trigger actions on your laptop, your smartwatch can control your home sensors, and your data flows freely between devices you actually own.
+            </p>
+            <p>
+                This isn't just about connecting devices - it's about restoring the superpower of personal computing. With i, your distributed machines become your digital representatives, helping maintain balance against the corporate computing universe while you build, share, and learn how your own systems actually work.
+            </p>
+
+        <h2>Portable</h2>
+            <p>
+                'i' is built to run across the full range of personal computing devices. The runtime is written in C17 with minimal, portable dependencies, compiling from a single codebase to all supported platforms using standard open source build tools.
+            </p>
+            <p>
+                Supported platforms:
+                <ul>
+                    <li>
+                        Classical computers: Windows, macOS, Linux and other POSIX environments
+                    </li>
+                    <li>
+                        Mobile devices: iOS, Android
+                    </li>
+                    <li>
+                        Embedded systems: FreeRTOS (ESP32 family microcontrollers)
+                    </li>
+                    <li>
+                        JavaScript environments: Browsers and other JS runtimes
+                    </li>
+                </ul>
+            </p>
+            <p>
+                The runtime compiles to under 1MB with low memory requirements, enabling fast startup and responsive performance on both modern and legacy hardware. The same binary architecture runs on everything from desktop machines to resource-constrained microcontrollers, enabling JavaScript programmers to work with embedded systems using familiar language and tools.
+            </p>
+            <p>
+                The codebase is kept simple and readable, designed for users who want to understand and modify the underlying system.
+            </p>
+
+
+
+        <h2>Distributed</h2>
+        <p>
+            Personal computing devices rarely communicate effectively with each other. Sharing data between devices—or even between applications on the same device—often faces significant technical and systemic barriers.
+        </p>
+        <p>
+            'i' connects all personal devices into a single distributed computer, controllable through a live programming interface. Code can be assigned to run on specific devices or simply on devices with particular capabilities. The JavaScript runtime uses its reflective nature to automatically route code execution to appropriate hardware, presenting the programmer with a unified programmable machine.
+        </p>
+        <p>
+            Example: Code running on a microcontroller can sample images from a connected camera sensor, then send both the image data and object detection code to execute on a GPU-capable device. The runtime automatically handles the camera logic locally on the microcontroller while dispatching the processing code to run on the GPU, returning results via standard async function calls. From the programmer's perspective, this appears as a single machine operation.
+        </p>
+        <p>
+            This distributed approach enables entirely new categories of applications by removing traditional device boundaries. The implementation is made feasible through strict focus on single-user environments, which eliminates much of the complexity typically associated with distributed systems and allows for simple, robust approaches to coordination and data routing.
+        </p>
+
+
+        <h2>Runtime</h2>
+            <p>
+                JavaScript's reflective nature enables live autocomplete and code inspection across the distributed system—the runtime automatically discovers and shares runtime state between devices to maintain a unified development experience.
+            </p>
+            <p>
+                Functions and callbacks can be serialized and transmitted for execution on appropriate devices, with the underlying system handling the routing transparently. This enables seamless code execution across the distributed environment while maintaining standard JavaScript semantics.
+            </p>
+            <p>
+                Core APIs:
+                <ul>
+                    <li>Vector graphics rendering</li>
+                    <li>File system access</li>
+                    <li>Client and server networking (HTTPS, WebSockets, WebRTC)</li>
+                    <li>Console input and output</li>
+                    <li>User interface peripherals (camera, microphone, keyboard, mouse)</li>
+                    <li>Browser automation</li>
+                    <li>Local ML model execution</li>
+                    <li>Accelerated graphics and compute abstraction layer</li>
+                </ul>
+            </p>
+            <p>
+                Additional APIs are implemented as requirements emerge from real-world usage.
+            </p>
+            <p>
+                The runtime can integrate and share data with other applications running on the same device. This enables use cases such as implementing a 'sharing hub' on mobile devices—accumulating and routing data between applications that would otherwise operate in isolation.
+            </p>
+
+
+
+        <h2>Programming environment</h2>
+            <p>
+                The programming environment operates as a live system, similar to Smalltalk environments. Code development happens within the running distributed system, with autocomplete and hints generated from current system state and available device resources.
+            </p>
+            <p>
+                Development features:
+                <ul>
+                    <li>Syntax highlighting and standard IDE functionality</li>
+                    <li>Live autocomplete based on runtime state across all connected devices</li>
+                    <li>Built-in contextual help system</li>
+                    <li>Device monitoring and control interfaces</li>
+                    <li>System-wide debugging and inspection tools</li>
+                </ul>
+            </p>
+            <p>
+                Programming abstractions operate at a higher level than traditional systems programming, enabling rapid development of personal automations, tools, and processes. The runtime presents all connected devices through a consistent set of modern abstractions, reducing the scope of knowledge required for distributed programming.
+            </p>
+            <p>
+                This unified abstraction layer has an additional benefit: the well-defined, limited scope of APIs and concepts can be efficiently represented within small language model contexts. This enables new forms of human-AI collaboration in code development, where AI assistance operates within the constrained problem domain without requiring generated code for critical functionality like authentication or networking.
+            <p>
+        <br><br><br>
+        <hr>
+
+    </body>
+</html>
